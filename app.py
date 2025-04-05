@@ -43,10 +43,6 @@ model = genai.GenerativeModel(
     model_name="gemini-1.5-flash"
 )
 
-@app.route('/', methods=['GET'])
-def index():
-    return "hello"
-
 @app.route('/chat', methods=['POST'])
 def chat():
     """Processes user input and returns AI-generated responses.
