@@ -10,6 +10,7 @@ def generate():
     )
 
     model = "gemini-2.0-flash"
+    history = {}  # Dictionary to store responses for each stock
 
     while True:
         # Get user input dynamically
@@ -18,6 +19,12 @@ def generate():
         if user_input.lower() == "exit":
             print("Exiting the program. Goodbye!")
             break
+
+        # Check if the stock is already in history
+        if user_input in history:
+            print("Using cached response for this stock:")
+            print(history[user_input])
+            continue
 
         contents = [
             types.Content(
@@ -35,43 +42,6 @@ Disclaimer ⚠️ – \"This content is for informational and entertainment purp
                 ],
             ),
             types.Content(
-                role="model",
-                parts=[
-                    types.Part.from_text(text="""Alright, bet. Let's break down this stock.
-
-**Quick Stock News Recap 📰**
-
-Okay, so Palantir (PLTR) has been kinda popping off lately. They're all about that AI life, and they've been snagging some big government and enterprise contracts. Earnings reports have been decent, but the stock price has been kinda wild, swinging up and down like crazy. They are now included in the S&P 500 index. 🥳
-
-**Buy Rating (out of 10) 📈:** 6/10
-
-*   **Why:** Palantir is a polarizing stock. While it is in the S&P 500, valuation metrics are very high, and it is up a lot this year. Be cautious when dealing with speculative companies.
-
-**Hype Rating (out of 10) 🗣️:** 8/10
-
-*   **Why:** Palantir is definitely having a moment. Everyone's talking about it, especially with the AI buzz. Some think it's gonna revolutionize everything, others think it's just a fad. There are lots of discussions across social media platforms, and it tends to be a trending stock. The stock price has more than doubled this year alone. 🚀
-
-**The Vibe Check 🤔:** Hold
-
-**Should You Buy?**
-
-*   **High Risk:** If you're feeling risky and believe in the long-term AI play, maybe a small position.
-*   **Low Risk:** Probably sit this one out or wait for a dip.
-*   **Already holding:** Hold.
-
-**Receipts 🧾**
-
-*   Big government contracts = $$$
-*   AI hype = potentially unsustainable price
-*   Volatile stock price = 🎢
-
-**Disclaimer ⚠️**
-
-This content is for informational and entertainment purposes only and does not constitute financial, investment, or legal advice. Always do your own research and consult with a licensed financial advisor before making any investment decisions.
-"""),
-                ],
-            ),
-            types.Content(
                 role="user",
                 parts=[
                     types.Part.from_text(text=user_input),
@@ -82,12 +52,18 @@ This content is for informational and entertainment purposes only and does not c
             response_mime_type="text/plain",
         )
 
+        response_text = ""
         for chunk in client.models.generate_content_stream(
             model=model,
             contents=contents,
             config=generate_content_config,
         ):
+            response_text += chunk.text
             print(chunk.text, end="")
+
+        # Store the response in history
+        history[user_input] = response_text
+
 
 if __name__ == "__main__":
     generate()
