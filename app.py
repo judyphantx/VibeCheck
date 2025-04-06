@@ -1,10 +1,11 @@
-import base64
-import os
 from flask import Flask, request, jsonify
 from google import genai
 from google.genai import types
+from flask_cors import CORS
+import os
 
 app = Flask(__name__)
+CORS(app)  # Allow CORS for all origins
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 model = "gemini-2.0-flash"
@@ -13,6 +14,7 @@ history = {}  # Dictionary to store responses for each stock
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.json.get("message")
+    print("Received message:", user_input)  # Debugging log
 
     if user_input.lower() == "exit":
         return jsonify({"message": "Exiting the program. Goodbye!"})
@@ -41,7 +43,7 @@ Disclaimer ⚠️ – "This content is for informational and entertainment purpo
         ),
     ]
     generate_content_config = types.GenerateContentConfig(response_mime_type="text/plain")
-    
+
     response_text = ""
     for chunk in client.models.generate_content_stream(
         model=model,
@@ -49,9 +51,11 @@ Disclaimer ⚠️ – "This content is for informational and entertainment purpo
         config=generate_content_config,
     ):
         response_text += chunk.text
-    
+
     # Store the response in history
     history[user_input] = response_text
+
+    print("Bot response:", response_text)  # Debugging log
 
     return jsonify({"message": response_text})
 
