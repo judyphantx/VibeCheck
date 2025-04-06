@@ -182,11 +182,14 @@
                     messageDiv.classList.add(
                       role === "user" ? "user-message" : "bot-message"
                     );
-                    messageDiv.textContent = text;
+
+                    // Add a line break before each "**"
+                    const formattedText = text.split("**").join("<br>**");
+
+                    messageDiv.innerHTML = formattedText; // Use innerHTML to allow HTML content (line breaks)
                     chatBox.appendChild(messageDiv);
                     chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
                   };
-
                   const handleSendMessage = async () => {
                     const userMessage = userInput.value.trim();
                     if (!userMessage) return;
