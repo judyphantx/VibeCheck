@@ -1,813 +1,214 @@
-<!-- Save as index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Simple Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #f4f4f4;
-    }
-    h1 {
-      color: #333;
-    }
-    a.button {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #007bff;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Check</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a simple HTML & CSS page.</p>
-  <a href="https://example.com" class="button">Learn More</a>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>React on My Website</title>
-
-  <!-- React and ReactDOM via CDN -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Babel for JSX support in the browser -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-<body>
-  <div id="root"></div>
-
-  <!-- Your React code goes here -->
-  <script type="text/babel">
-    function App() {
-      return (
-        <div style={{ textAlign: "center", padding: "2rem", fontFamily: "Arial" }}>
-          <h1>Hello from React!</h1>
-          <p>This is rendered using React in a simple HTML file.</p>
-        </div>
-      );
-    }
-
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<App />);
-  </script>
-</body>
-</html>
-
-<div style="width: 1920px; height: 4095.33px; position: relative; background: linear-gradient(0deg, var(--color-white-solid, white) 0%, var(--color-white-solid, white) 100%), var(--color-white-solid, white)">
-    <div style="width: 1920px; height: 231.59px; min-height: 200px; padding-left: 392.50px; padding-right: 432.50px; left: 0px; top: 70px; position: absolute; background: var(--color-azure-42, #1666C2); overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
-      <div style="width: 1007.70px; height: 1495px; left: 61.60px; top: -658.73px; position: absolute; transform: rotate(10deg); transform-origin: top left; opacity: 0.50; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-32, #114C91); font-size: 1170px; font-family: Inter; font-weight: 600; line-height: 28.80px; word-wrap: break-word">M</div>
-      <div style="width: 753.79px; height: 1495px; left: 881.66px; top: -458.52px; position: absolute; transform: rotate(-15deg); transform-origin: top left; opacity: 0.50; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-32, #114C91); font-size: 1170px; font-family: Inter; font-weight: 600; line-height: 28.80px; word-wrap: break-word">B</div>
-      <div style="width: 1095px; height: 231.59px; max-width: 1095px; position: relative">
-        <div style="width: 524.37px; height: 42px; left: 0px; top: 60px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 32.81px; font-family: Inter; font-weight: 500; line-height: 42px; word-wrap: break-word">Become smarter in just 5 minutes</div>
-        <div style="width: 563.22px; height: 58px; left: 0px; top: 112.90px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 16.73px; font-family: Inter; font-weight: 400; line-height: 28.80px; word-wrap: break-word">Morning Brew delivers quick and insightful updates about the business<br/>world every day of the week from Wall St. to Silicon Valley.</div>
-        <div style="height: 111.59px; min-width: 450px; left: 645px; top: 60px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-          <div style="align-self: stretch; min-height: 44px; padding-top: 10px; padding-bottom: 11.80px; padding-left: 9px; padding-right: 9px; background: var(--color-white-solid, white); overflow: hidden; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-              <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #757575); font-size: 17.72px; font-family: Inter; font-weight: 400; word-wrap: break-word">Email</div>
-            </div>
-          </div>
-          <div style="align-self: stretch; min-height: 44px; padding-top: 10.65px; padding-bottom: 12.35px; padding-left: 16px; padding-right: 16px; background: var(--color-grey-13, #231F20); border-radius: 4px; justify-content: center; align-items: center; display: inline-flex">
-            <div style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 16.88px; font-family: Inter; font-weight: 500; line-height: 20.70px; word-wrap: break-word">Subscribe</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="width: 620px; height: 684.39px; left: 320px; top: 381.59px; position: absolute; background: var(--color-grey-97, #FAF9F5); overflow: hidden; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px">
-      <div style="width: 74.18px; height: 14px; left: 29px; top: 449px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.34px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Economy</div>
-      <div style="width: 562px; left: 29px; top: 469.80px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 32.54px; font-family: Inter; font-weight: 500; line-height: 42px; word-wrap: break-word">Stocks just had their worst day in<br/>nearly 5 years</div>
-      </div>
-      <div style="width: 537.56px; height: 58px; left: 29px; top: 564.70px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.59px; font-family: Inter; font-weight: 400; line-height: 28.80px; word-wrap: break-word">More than $1 trillion of yesterday’s losses came from the Mag 7 after<br/>Tuesday's tariff reveal.</div>
-      <div style="width: 136.33px; height: 12px; left: 29px; top: 635.39px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Molly Liebergall</div>
-      <img style="width: 618px; height: 412px; left: 1px; top: 1px; position: absolute" src="https://placehold.co/618x412" />
-      <div style="width: 618px; height: 412px; left: 1px; top: 1px; position: absolute"></div>
-    </div>
-    <div style="width: 620px; height: 46.59px; left: 980px; top: 381.59px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid">
-      <div style="width: 134.42px; height: 34px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 26.03px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">The Latest</div>
-      <div style="left: 512.45px; top: 1.89px; position: absolute; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 13.45px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 28.80px; letter-spacing: 0.70px; word-wrap: break-word">All Stories</div>
-        <div style="width: 12px; height: 12px; position: relative">
-          <div style="width: 6px; height: 10.50px; left: 3.75px; top: 0.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-      </div>
-    </div>
-    <div style="width: 620px; padding-bottom: 8px; left: 980px; top: 448.19px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.34px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Economy</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.38px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">How companies are reacting to tariffs</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Matty Merritt | about 18 hours ago</div>
-    </div>
-    <div style="width: 620px; height: 1px; left: 980px; top: 545.78px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 620px; padding-bottom: 7.99px; left: 980px; top: 566.78px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.78px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Federal Reserve</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.20px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">The Fed isn’t about to rescue your 401k</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Sam Klebanov | about 19 hours ago</div>
-    </div>
-    <div style="width: 620px; height: 1px; left: 980px; top: 664.38px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 620px; padding-bottom: 8px; left: 980px; top: 685.38px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 14px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">HR</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.56px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Alleged mole admits to spying in rare drama for HR tech</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Molly Liebergall | about 19 hours ago</div>
-    </div>
-    <div style="width: 620px; height: 1px; left: 980px; top: 782.97px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 620px; padding-bottom: 8px; left: 980px; top: 803.97px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.45px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Big Tech</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.20px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Why Microsoft is feeling blissful at 50</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Sam Klebanov | Apr 4, 2025</div>
-    </div>
-    <div style="width: 620px; height: 1px; left: 980px; top: 901.56px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 620px; padding-bottom: 7.99px; left: 980px; top: 922.56px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.23px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Business News</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.20px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Brew Classifieds: Week of April 1</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Matty Merritt | Apr 4, 2025</div>
-    </div>
-    <div style="width: 840px; height: 46.59px; padding-bottom: 14.59px; left: 320px; top: 1145.98px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid; justify-content: flex-start; align-items: center; display: inline-flex; flex-wrap: wrap; align-content: center">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 26.47px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Editor’s Picks</div>
-    </div>
-    <div style="width: 400px; height: 391.84px; left: 320px; top: 1212.58px; position: absolute">
-      <div style="width: 74.18px; height: 14px; left: 0px; top: 286.65px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.34px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Economy</div>
-      <div style="width: 400px; left: 0px; top: 307.95px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.38px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Trump’s tariffs herald a new economic<br/>order</div>
-      </div>
-      <div style="width: 272.33px; height: 12px; left: 0px; top: 371.84px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Abigail Rubenstein, Neal Freyman</div>
-      <div style="width: 400px; height: 266.66px; left: 0px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px">
-        <img style="width: 400px; height: 266.66px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/400x267" />
-      </div>
-    </div>
-    <div style="width: 400px; height: 364.25px; left: 760px; top: 1212.58px; position: absolute">
-      <div style="width: 74.18px; height: 14px; left: 0px; top: 286.65px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.34px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Economy</div>
-      <div style="width: 353.51px; height: 28px; left: 0px; top: 308.15px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.20px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Tariff history could be made today</div>
-      <div style="width: 102.38px; height: 12px; left: 0px; top: 344.25px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Sam Klebanov</div>
-      <div style="width: 400px; height: 266.66px; left: 0px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px">
-        <img style="width: 400px; height: 266.66px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/400x267" />
-      </div>
-    </div>
-    <div style="width: 400px; height: 364.25px; left: 320px; top: 1624.42px; position: absolute">
-      <div style="width: 50.67px; height: 14px; left: 0px; top: 286.66px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 14px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Retail</div>
-      <div style="width: 327.29px; height: 28px; left: 0px; top: 308.16px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.74px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">H&M is digitally cloning models</div>
-      <div style="width: 136.33px; height: 12px; left: 0px; top: 344.25px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Molly Liebergall</div>
-      <div style="width: 400px; height: 266.66px; left: 0px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px">
-        <img style="width: 400px; height: 266.66px; left: 0px; top: 0px; position: absolute" src="https://placehold.co/400x267" />
-      </div>
-    </div>
-    <div style="width: 400px; height: 46.59px; left: 1200px; top: 1145.98px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid">
-      <div style="width: 89.89px; height: 34px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 26.69px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Games</div>
-      <div style="left: 300.88px; top: 1.90px; position: absolute; justify-content: flex-start; align-items: center; gap: 3.99px; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 13.67px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 28.80px; letter-spacing: 0.70px; word-wrap: break-word">All Games</div>
-        <div style="width: 12px; height: 12px; position: relative">
-          <div style="width: 6px; height: 10.50px; left: 3.75px; top: 0.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-      </div>
-    </div>
-    <div style="width: 400px; height: 360.28px; left: 1200px; top: 1212.58px; position: absolute; background: var(--color-grey-97, #FAF9F5); overflow: hidden; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px">
-      <div style="width: 398px; padding-top: 8.50px; padding-bottom: 8.69px; padding-left: 8px; padding-right: 8px; left: 1px; top: 100.50px; position: absolute; background: var(--color-white-solid, white); border-top: 1px var(--color-azure-47, #6B7885) solid; border-bottom: 1px var(--color-azure-47, #6B7885) solid; justify-content: center; align-items: center; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column"><span style="color: var(--color-azure-47, #6B7885); font-size: 11.44px; font-family: Inter; font-weight: 400; text-transform: uppercase; line-height: 19.20px; letter-spacing: 0.60px; word-wrap: break-word">From </span><span style="color: var(--color-azure-47, #6B7885); font-size: 11.44px; font-family: Inter; font-weight: 700; text-transform: uppercase; line-height: 19.20px; letter-spacing: 0.60px; word-wrap: break-word">The Crew</span></div>
-      </div>
-      <div style="width: 139.37px; height: 14px; left: 29px; top: 173.69px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.45px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Brew Crossword</div>
-      <div style="width: 342px; left: 29px; top: 194.48px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 31.99px; font-family: Inter; font-weight: 500; line-height: 42px; word-wrap: break-word">Brew crossword: See<br/>you in court</div>
-      </div>
-      <div style="width: 239.45px; height: 29px; left: 29px; top: 290.38px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.59px; font-family: Inter; font-weight: 400; line-height: 28.80px; word-wrap: break-word">Can you solve this crossword?</div>
-      <img style="width: 398px; height: 99.50px; left: 1px; top: 1px; position: absolute" src="https://placehold.co/398x99" />
-      <div style="width: 398px; height: 99.50px; left: 1px; top: 1px; position: absolute"></div>
-    </div>
-    <div style="width: 400px; padding-bottom: 7.69px; left: 1200px; top: 1592.86px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.45px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Brew Crossword</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.73px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">Call yourself an oatmilk connoisseur?</div>
-      <div style="justify-content: center; display: flex; flex-direction: column"><span style="color: var(--color-azure-47, #6B7885); font-size: 11.44px; font-family: Inter; font-weight: 400; text-transform: uppercase; line-height: 19.20px; letter-spacing: 0.60px; word-wrap: break-word">TOGETHER WITH </span><span style="color: var(--color-azure-47, #6B7885); font-size: 11.44px; font-family: Inter; font-weight: 700; text-transform: uppercase; line-height: 19.20px; letter-spacing: 0.60px; word-wrap: break-word">Planet Oat</span></div>
-    </div>
-    <div style="width: 400px; height: 1px; left: 1200px; top: 1691.64px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 400px; padding-bottom: 7.69px; left: 1200px; top: 1712.64px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 7.50px; display: inline-flex">
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-42, #1666C2); font-size: 13.78px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 14px; letter-spacing: 0.70px; word-wrap: break-word">Quiz</div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.73px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">Friday News Quiz: April 4</div>
-      <div style="justify-content: center; display: flex; flex-direction: column"><span style="color: var(--color-azure-47, #6B7885); font-size: 11.44px; font-family: Inter; font-weight: 400; text-transform: uppercase; line-height: 19.20px; letter-spacing: 0.60px; word-wrap: break-word">From </span><span style="color: var(--color-azure-47, #6B7885); font-size: 11.44px; font-family: Inter; font-weight: 700; text-transform: uppercase; line-height: 19.20px; letter-spacing: 0.60px; word-wrap: break-word">The Crew</span></div>
-    </div>
-    <div style="width: 1280px; height: 46.59px; left: 320px; top: 2068.67px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid">
-      <div style="width: 410.67px; height: 34px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 26.14px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">The Morning Brew Daily Podcast</div>
-      <div style="left: 1146.64px; top: 1.89px; position: absolute; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 13.45px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 28.80px; letter-spacing: 0.70px; word-wrap: break-word">More Episodes</div>
-        <div style="width: 12px; height: 12px; position: relative">
-          <div style="width: 6px; height: 10.50px; left: 3.75px; top: 0.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-      </div>
-    </div>
-    <div style="width: 620px; left: 320px; top: 2135.27px; position: absolute; background: var(--color-white-solid, white); overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-      <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-        <div style="align-self: stretch; height: 200px; max-height: 200px; justify-content: center; align-items: flex-start; display: inline-flex">
-          <div style="max-width: 200px; max-height: 200px; background: var(--color-azure-12, #191D23); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-            <img style="width: 200px; height: 200px; max-width: 200px; max-height: 300px; position: relative" src="https://placehold.co/200x200" />
-          </div>
-          <div style="flex: 1 1 0; height: 200px; max-height: 200px; position: relative; background: var(--color-azure-16, #232831); overflow: hidden">
-            <div style="width: 40px; height: 40px; padding: 11px; left: 24px; top: 16px; position: absolute; background: var(--color-blue-69, #7474EC); border-radius: 20px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-              <img style="width: 18px; height: 18px; position: relative" src="https://placehold.co/18x18" />
-            </div>
-            <div style="height: 70.78px; left: 84px; top: 16px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 3px; display: inline-flex">
-              <div style="align-self: stretch; height: 16px; padding-top: 1px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 12.30px; font-family: Inter; font-weight: 500; word-wrap: break-word">Morning Brew Daily</div>
-              </div>
-              <div style="align-self: stretch; height: 20px; padding-top: 1px; padding-bottom: 3px; overflow: hidden; justify-content: flex-start; align-items: flex-start; gap: 0px; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 15.38px; font-family: Inter; font-weight: 500; word-wrap: break-word">What Goods Will Be Impacte</div>
-                <div style="width: 16.01px; height: 16px; position: relative">
-                  <div style="width: 12.38px; height: 1.73px; left: 1.82px; top: 10.46px; position: absolute; background: var(--color-white-solid, white)"></div>
-                </div>
-              </div>
-              <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 11.06px; font-family: Inter; font-weight: 500; line-height: 14.40px; word-wrap: break-word">What products will be more expensive with<br/>Tariffs and Amazon could by TikTok</div>
-              </div>
-            </div>
-            <div style="width: 50.01px; height: 13px; left: 346.19px; top: 71.78px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-73, #BABABA); font-size: 11.20px; font-family: Inter; font-weight: 500; word-wrap: break-word">00:00:00</div>
-            <div style="width: 53.11px; height: 48px; left: 420px; top: 17px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 13.02px; font-family: Inter; font-weight: 500; word-wrap: break-word">Forward<br/>15<br/>seconds</div>
-            <div style="width: 51.83px; height: 31px; left: 420px; top: 17px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 12.69px; font-family: Inter; font-weight: 500; word-wrap: break-word">Back 15<br/>seconds</div>
-            <div style="width: 372px; height: 45px; left: 24px; top: 103.89px; position: absolute">
-              <div style="width: 372px; height: 29.96px; left: 0px; top: 14.89px; position: absolute; outline: 1.15px var(--color-grey-93, #EAEAEF) solid; outline-offset: -0.58px"></div>
-            </div>
-            <div style="width: 420px; height: 200px; padding-bottom: 174px; padding-left: 20px; padding-right: 20px; left: 0px; top: 174px; position: absolute; background: var(--color-azure-12, #191D23); justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-73, #BABABA); font-size: 9.69px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 26px; word-wrap: break-word">Share</div>
-              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-73, #BABABA); font-size: 9.38px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 26px; word-wrap: break-word">Subscribe</div>
-              <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-73, #BABABA); font-size: 9.84px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 26px; word-wrap: break-word">Description</div>
-              <div style="height: 16px; padding-left: 183.20px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="width: 16px; height: 16px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
-                  <div style="width: 16px; height: 16px; position: relative; overflow: hidden">
-                    <img style="width: 16px; height: 14.88px; left: 0px; top: 0.64px; position: absolute" src="https://placehold.co/16x15" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="align-self: stretch; height: 100px; position: relative; background: var(--color-azure-16, #232831)">
-          <div style="width: 104.98px; height: 13px; left: 25px; top: 14px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 12.29px; font-family: Inter; font-weight: 500; text-transform: uppercase; word-wrap: break-word">In This Playlist</div>
-          <div style="width: 127.58px; height: 13px; left: 467.63px; top: 14px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 12.70px; font-family: Inter; font-weight: 500; text-transform: uppercase; word-wrap: break-word">10 of 558 Episodes</div>
-          <div style="width: 620px; height: 58px; left: 0px; top: 42px; position: absolute; overflow: hidden">
-            <div style="width: 620px; height: 48.50px; left: 0px; top: 0px; position: absolute; background: var(--color-azure-21, #2C333F)">
-              <div style="height: 22.50px; left: 25px; top: 13px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-                <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-blue-69, #7474EC); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                  <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-                </div>
-                <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                  <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 14.30px; font-family: Inter; font-weight: 500; word-wrap: break-word">What Goods Will Be Impacted By Tariffs & Amazon Buying TikTok?</div>
-                </div>
-              </div>
-              <div style="width: 45.78px; height: 15px; left: 549.42px; top: 18.50px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 13.83px; font-family: Inter; font-weight: 500; word-wrap: break-word">30 min</div>
-            </div>
-            <div style="height: 22.50px; left: 25px; top: 61.50px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.18px; font-family: Inter; font-weight: 500; word-wrap: break-word">Trump's Tariff Reveal Escalates Trade War & Tesla Sales Drop 13%</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 67px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.06px; font-family: Inter; font-weight: 500; word-wrap: break-word">32 min</div>
-            <div style="height: 22.50px; left: 25px; top: 110px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.18px; font-family: Inter; font-weight: 500; word-wrap: break-word">World Braces for Trump's Tariffs & Practice Flirting with Tinder’s AI</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 115.50px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 13.83px; font-family: Inter; font-weight: 500; word-wrap: break-word">30 min</div>
-            <div style="height: 22.50px; left: 25px; top: 158.50px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.30px; font-family: Inter; font-weight: 500; word-wrap: break-word">AI Coming for Fashion Models? & Travelers Scramble for REAL IDs</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 164px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 13.83px; font-family: Inter; font-weight: 500; word-wrap: break-word">30 min</div>
-            <div style="height: 22.50px; left: 25px; top: 207px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.65px; font-family: Inter; font-weight: 500; word-wrap: break-word">Markets Wrap Up a Shaky Q1 & Elon Musk Sells ‘X’ To... 'xAI'</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 212.50px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 13.83px; font-family: Inter; font-weight: 500; word-wrap: break-word">30 min</div>
-            <div style="height: 22.50px; left: 25px; top: 255.50px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.18px; font-family: Inter; font-weight: 500; word-wrap: break-word">ChatGPT’s Image Generator Goes Viral & Tesla Unfazed by Tariffs?</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 261px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 13.83px; font-family: Inter; font-weight: 500; word-wrap: break-word">30 min</div>
-            <div style="height: 22.50px; left: 25px; top: 304px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.41px; font-family: Inter; font-weight: 500; word-wrap: break-word">Trump Drops 25% Tariffs on Cars & 'Family Dollar' Sold for $1B</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 309.50px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 13.83px; font-family: Inter; font-weight: 500; word-wrap: break-word">30 min</div>
-            <div style="height: 22.50px; left: 25px; top: 352.50px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.30px; font-family: Inter; font-weight: 500; word-wrap: break-word">Napster Sold For $207M & Canadians Are Skipping US Travel</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 358px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.06px; font-family: Inter; font-weight: 500; word-wrap: break-word">29 min</div>
-            <div style="height: 22.50px; left: 25px; top: 401px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.06px; font-family: Inter; font-weight: 500; word-wrap: break-word">23andMe Files for Bankruptcy & Sesame Street’s Rocky Finances</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 406.50px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.06px; font-family: Inter; font-weight: 500; word-wrap: break-word">29 min</div>
-            <div style="height: 22.50px; left: 25px; top: 449.50px; position: absolute; overflow: hidden; justify-content: flex-start; align-items: center; gap: 15px; display: inline-flex">
-              <div style="width: 20px; height: 20px; padding-top: 6px; padding-bottom: 6px; padding-left: 7px; padding-right: 5px; background: var(--color-grey-33, #555555); border-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <img style="width: 8px; height: 8px; position: relative" src="https://placehold.co/8x8" />
-              </div>
-              <div style="padding-top: 5.50px; padding-bottom: 2px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.41px; font-family: Inter; font-weight: 500; word-wrap: break-word">AppleTV+ is Losing $1B/Yr & Boeing Banks Big Defense Deal</div>
-              </div>
-            </div>
-            <div style="width: 45.78px; height: 15px; left: 549.42px; top: 455px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-76, #C3C3C3); font-size: 14.06px; font-family: Inter; font-weight: 500; word-wrap: break-word">28 min</div>
-            <div style="width: 79.65px; height: 15px; left: 25px; top: 498px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 13px; font-family: Inter; font-weight: 700; text-transform: uppercase; word-wrap: break-word">Load more</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="width: 572.79px; height: 148px; left: 996px; top: 2147.10px; position: absolute; justify-content: center; display: flex; flex-direction: column"><span style="color: var(--color-grey-13, #231F20); font-size: 21.20px; font-family: Inter; font-weight: 400; line-height: 36.80px; word-wrap: break-word">The</span><span style="color: var(--color-grey-13, #231F20); font-size: 21.20px; font-family: Inter; font-weight: 700; line-height: 36.80px; word-wrap: break-word"> Morning Brew Daily Show</span><span style="color: var(--color-grey-13, #231F20); font-size: 21.20px; font-family: Inter; font-weight: 400; line-height: 36.80px; word-wrap: break-word"> covers the latest news on<br/>business, the economy, and everything else, with Neal<br/>Freyman and Toby Howell. Witty, informative and<br/>everything you need to start your day.</span></div>
-    <div style="height: 40px; padding-top: 8.70px; padding-bottom: 9.30px; padding-left: 17px; padding-right: 17px; left: 996px; top: 2344.89px; position: absolute; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-      <div style="width: 18px; height: 19px; position: relative">
-        <div style="width: 17.44px; height: 17.44px; left: 0.28px; top: 0.93px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.73px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">Spotify</div>
-    </div>
-    <div style="height: 40px; padding-top: 8.70px; padding-bottom: 9.30px; padding-left: 17px; padding-right: 17px; left: 1116.25px; top: 2344.89px; position: absolute; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-      <div style="width: 20px; height: 15px; position: relative">
-        <div style="width: 19.23px; height: 13.50px; left: 0.37px; top: 0.89px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 17.02px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">YouTube</div>
-    </div>
-    <div style="height: 40px; padding-left: 17px; padding-right: 17px; padding-top: 9px; padding-bottom: 9px; left: 1251.27px; top: 2344.89px; position: absolute; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-      <div style="width: 24px; height: 22px; position: relative">
-        <img style="width: 24px; height: 21px; left: 0px; top: 0.89px; position: absolute" src="https://placehold.co/24x21" />
-      </div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.88px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">Apple Podcasts</div>
-    </div>
-    <div style="height: 40px; padding-top: 8.70px; padding-bottom: 9.30px; padding-left: 17px; padding-right: 17px; left: 1447.69px; top: 2344.89px; position: absolute; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-      <div style="width: 24px; height: 15px; position: relative">
-        <div style="width: 22.50px; height: 13.89px; left: 0.75px; top: 0.72px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 17.16px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">Audible</div>
-    </div>
-    <div style="height: 40px; padding-top: 8.70px; padding-bottom: 9.30px; padding-left: 17px; padding-right: 17px; left: 996px; top: 2389.89px; position: absolute; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-      <div style="width: 25px; height: 20px; position: relative">
-        <div style="width: 20.03px; height: 12.14px; left: 2.48px; top: 3.93px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 1.99px; height: 1.96px; left: 13.93px; top: 7.57px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.88px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">Amazon Music</div>
-    </div>
-    <div style="height: 40px; padding-left: 17px; padding-right: 17px; padding-top: 9px; padding-bottom: 9px; left: 1185.41px; top: 2389.89px; position: absolute; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
-      <div style="width: 24px; height: 22px; position: relative">
-        <div style="width: 16.99px; height: 22px; left: 3.51px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 17.16px; font-family: Inter; font-weight: 600; line-height: 21.60px; word-wrap: break-word">iHeartRadio</div>
-    </div>
-    <div style="width: 1280px; height: 46.59px; left: 320px; top: 2523.06px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid">
-      <div style="width: 80.72px; height: 34px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 26.03px; font-family: Inter; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Watch</div>
-      <div style="left: 1033.11px; top: 1.89px; position: absolute; justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 13.23px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 28.80px; letter-spacing: 0.70px; word-wrap: break-word">Much More Over On Youtube</div>
-        <div style="width: 12px; height: 12px; position: relative">
-          <div style="width: 6px; height: 10.50px; left: 3.75px; top: 0.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-      </div>
-    </div>
-    <div style="width: 730px; height: 523.02px; left: 320px; top: 2589.66px; position: absolute">
-      <div style="width: 730px; left: 0px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
-        <img style="align-self: stretch; flex: 1 1 0; position: relative" src="https://placehold.co/730x411" />
-      </div>
-      <div style="width: 568.56px; height: 28px; left: 0px; top: 430.12px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.20px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">NYC could lose another indie theater. It doesn't have to.</div>
-      <div style="width: 112.67px; height: 36.80px; left: 0px; top: 466.22px; position: absolute">
-        <div style="width: 18px; height: 18px; left: 0px; top: 5.39px; position: absolute">
-          <div style="width: 18px; height: 18px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 15px; height: 15px; left: 1.50px; top: 1.50px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        </div>
-        <div style="width: 90.87px; height: 29px; left: 22px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 16.59px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Watch Now</div>
-      </div>
-      <div style="width: 93.86px; height: 12px; left: 0px; top: 503.01px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Apr 4, 2025</div>
-    </div>
-    <div style="width: 510px; height: 133px; left: 1090px; top: 2589.66px; position: absolute">
-      <div style="height: 133px; min-width: 200px; left: 310px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
-        <img style="width: 200px; flex: 1 1 0; position: relative" src="https://placehold.co/200x133" />
-      </div>
-      <div style="width: 290px; left: 0px; top: 5.79px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.38px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">The Real Reason the US is<br/>Betting on Tariffs</div>
-      </div>
-      <div style="width: 112.67px; height: 36.80px; left: 0px; top: 69.68px; position: absolute">
-        <div style="width: 18px; height: 18px; left: 0px; top: 5.39px; position: absolute">
-          <div style="width: 18px; height: 18px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 15px; height: 15px; left: 1.50px; top: 1.50px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        </div>
-        <div style="width: 90.87px; height: 29px; left: 22px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 16.59px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Watch Now</div>
-      </div>
-      <div style="width: 93.86px; height: 12px; left: 0px; top: 106.48px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Apr 3, 2025</div>
-    </div>
-    <div style="width: 510px; height: 1px; left: 1090px; top: 2742.66px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 510px; height: 133px; left: 1090px; top: 2763.66px; position: absolute">
-      <div style="height: 133px; min-width: 200px; left: 310px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
-        <img style="width: 200px; flex: 1 1 0; position: relative" src="https://placehold.co/200x133" />
-      </div>
-      <div style="width: 290px; left: 0px; top: 5.79px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.38px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Why Big Candy is buying<br/>your vet clinic</div>
-      </div>
-      <div style="width: 112.67px; height: 36.80px; left: 0px; top: 69.68px; position: absolute">
-        <div style="width: 18px; height: 18px; left: 0px; top: 5.39px; position: absolute">
-          <div style="width: 18px; height: 18px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 15px; height: 15px; left: 1.50px; top: 1.50px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        </div>
-        <div style="width: 90.87px; height: 29px; left: 22px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 16.59px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Watch Now</div>
-      </div>
-      <div style="width: 102.38px; height: 12px; left: 0px; top: 106.48px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Mar 31, 2025</div>
-    </div>
-    <div style="width: 510px; height: 1px; left: 1090px; top: 2916.66px; position: absolute; border-bottom: 1px var(--color-grey-91, #E9E9E9) solid"></div>
-    <div style="width: 510px; height: 133px; left: 1090px; top: 2937.66px; position: absolute">
-      <div style="height: 133px; min-width: 200px; left: 310px; top: 0px; position: absolute; overflow: hidden; border-radius: 4px; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
-        <img style="width: 200px; flex: 1 1 0; position: relative" src="https://placehold.co/200x133" />
-      </div>
-      <div style="width: 290px; left: 0px; top: 5.79px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 21.20px; font-family: Inter; font-weight: 600; line-height: 27.60px; word-wrap: break-word">Why Every Town in America<br/>Looks the Same</div>
-      </div>
-      <div style="width: 112.67px; height: 36.80px; left: 0px; top: 69.68px; position: absolute">
-        <div style="width: 18px; height: 18px; left: 0px; top: 5.39px; position: absolute">
-          <div style="width: 18px; height: 18px; left: 0px; top: 0px; position: absolute"></div>
-          <div style="width: 15px; height: 15px; left: 1.50px; top: 1.50px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        </div>
-        <div style="width: 90.87px; height: 29px; left: 22px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 16.59px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Watch Now</div>
-      </div>
-      <div style="width: 102.38px; height: 12px; left: 0px; top: 106.48px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-47, #6B7885); font-size: 12px; font-family: Azeret Mono; font-weight: 500; text-transform: uppercase; line-height: 12px; letter-spacing: 0.70px; word-wrap: break-word">Mar 27, 2025</div>
-    </div>
-    <div style="width: 1920px; height: 400px; left: 0px; top: 3192.67px; position: absolute; background: var(--color-azure-42, #1666C2); overflow: hidden">
-      <div style="width: 1007.70px; height: 1495px; left: 61.60px; top: -816.73px; position: absolute; transform: rotate(10deg); transform-origin: top left; opacity: 0.50; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-32, #114C91); font-size: 1170px; font-family: Inter; font-weight: 600; line-height: 28.80px; word-wrap: break-word">M</div>
-      <div style="width: 753.79px; height: 1495px; left: 881.66px; top: -616.52px; position: absolute; transform: rotate(-15deg); transform-origin: top left; opacity: 0.50; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-32, #114C91); font-size: 1170px; font-family: Inter; font-weight: 600; line-height: 28.80px; word-wrap: break-word">B</div>
-      <div style="max-width: 620px; padding-top: 60px; padding-bottom: 60px; left: 440px; top: 29.80px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10.90px; display: inline-flex">
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 32.81px; font-family: Inter; font-weight: 500; line-height: 42px; word-wrap: break-word">Become smarter in just 5 minutes</div>
-        <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 16.73px; font-family: Inter; font-weight: 400; line-height: 28.80px; word-wrap: break-word">Morning Brew delivers quick and insightful updates about the business world<br/>every day of the week from Wall St. to Silicon Valley.</div>
-        <div style="align-self: stretch; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: flex">
-          <div style="align-self: stretch; min-height: 44px; padding-top: 10px; padding-bottom: 11.80px; padding-left: 9px; padding-right: 9px; background: var(--color-white-solid, white); overflow: hidden; border-radius: 4px; outline: 1px var(--color-azure-47, #6B7885) solid; outline-offset: -1px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-            <div style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-              <div style="align-self: stretch; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-46, #757575); font-size: 17.72px; font-family: Inter; font-weight: 400; word-wrap: break-word">Email</div>
-            </div>
-          </div>
-          <div style="align-self: stretch; min-height: 44px; padding-top: 10.66px; padding-bottom: 12.34px; padding-left: 16px; padding-right: 16px; background: var(--color-grey-13, #231F20); border-radius: 4px; justify-content: center; align-items: center; display: inline-flex">
-            <div style="flex: 1 1 0; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-white-solid, white); font-size: 16.88px; font-family: Inter; font-weight: 500; line-height: 20.70px; word-wrap: break-word">Subscribe</div>
-          </div>
-        </div>
-      </div>
-      <img style="width: 340px; height: 360px; left: 1100px; top: 40px; position: absolute" src="https://placehold.co/340x360" />
-    </div>
-    <div style="width: 1920px; height: 502.66px; left: 0px; top: 3592.67px; position: absolute; background: var(--color-grey-92, #D5E5FE); border-top: 1px var(--color-azure-47, #6B7885) solid">
-      <div style="width: 1280px; height: 155.66px; left: 320px; top: 41px; position: absolute; border-bottom: 1px var(--color-azure-47, #6B7885) solid">
-        <div style="height: 100px; max-width: 300px; min-height: 100px; left: 0px; top: 7.33px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-          <div style="width: 300px; height: 100px; padding-top: 7.59px; padding-bottom: 7.59px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
-            <div style="width: 300px; height: 84.83px; position: relative; overflow: hidden">
-              <div style="width: 86.41px; height: 84.40px; left: 0px; top: 0px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 31.23px; height: 30.49px; left: 104.68px; top: 7.55px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 28.85px; height: 31.49px; left: 139.79px; top: 7.04px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 24.33px; height: 30.49px; left: 172.56px; top: 7.55px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 25.53px; height: 30.49px; left: 200.01px; top: 7.55px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 6.35px; height: 30.49px; left: 230.90px; top: 7.55px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 25.52px; height: 30.49px; left: 242.62px; top: 7.55px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 27.96px; height: 31.49px; left: 272.01px; top: 7.04px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 22.89px; height: 30.49px; left: 104.68px; top: 46.86px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 24.34px; height: 30.49px; left: 131.63px; top: 46.86px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 20.71px; height: 30.49px; left: 159.10px; top: 46.86px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 38.23px; height: 30.49px; left: 181.90px; top: 46.86px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-            </div>
-          </div>
-        </div>
-        <div style="height: 23.83px; padding-top: 4px; padding-bottom: 4px; padding-left: 8px; padding-right: 9px; left: 894.44px; top: 0px; position: absolute; border-right: 1px var(--color-black-solid, black) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.45px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">News</div>
-        </div>
-        <div style="height: 23.83px; padding-top: 4px; padding-bottom: 4px; padding-left: 8px; padding-right: 9px; left: 955.83px; top: 0px; position: absolute; border-right: 1px var(--color-black-solid, black) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 17.02px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Games</div>
-        </div>
-        <div style="height: 23.83px; padding-top: 4px; padding-bottom: 4px; padding-left: 8px; padding-right: 9px; left: 1029.67px; top: 0px; position: absolute; border-right: 1px var(--color-black-solid, black) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.88px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Podcast</div>
-        </div>
-        <div style="height: 23.83px; padding-top: 4px; padding-bottom: 4px; padding-left: 8px; padding-right: 9px; left: 1112.56px; top: 0px; position: absolute; border-right: 1px var(--color-black-solid, black) solid; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 17.02px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Video</div>
-        </div>
-        <div style="width: 87.40px; height: 16px; left: 1184.80px; top: 3.50px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.59px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">Newsletter</div>
-        <div style="height: 23.83px; padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px; left: 1098.58px; top: 43.83px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.88px; font-family: Inter; font-weight: 500; line-height: 15.84px; word-wrap: break-word">About Morning Brew</div>
-        </div>
-        <div style="width: 27px; height: 27px; left: 1058px; top: 87.66px; position: absolute">
-          <div style="width: 24.27px; height: 21.94px; left: 1.41px; top: 2.53px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-        <div style="width: 27px; height: 27px; left: 1097px; top: 87.66px; position: absolute">
-          <div style="width: 23.62px; height: 23.62px; left: 1.69px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-        <div style="width: 27px; height: 27px; left: 1136px; top: 87.66px; position: absolute">
-          <div style="width: 15.38px; height: 27px; left: 5.80px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-        <div style="width: 27px; height: 27px; left: 1175px; top: 87.66px; position: absolute">
-          <div style="width: 23.62px; height: 26.99px; left: 1.69px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-        <div style="width: 27px; height: 27px; left: 1214px; top: 87.66px; position: absolute">
-          <div style="width: 25.60px; height: 18px; left: 0.70px; top: 4.50px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-        <div style="width: 27px; height: 27px; left: 1253px; top: 87.66px; position: absolute">
-          <div style="width: 23.64px; height: 23.63px; left: 1.68px; top: 1.68px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-      </div>
-      <div style="width: 239px; height: 28px; left: 320px; top: 236.66px; position: absolute">
-        <div style="width: 238.74px; height: 27.40px; left: 0px; top: 0.56px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 28.08px; height: 27.40px; left: 0px; top: 0.56px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.31px; height: 14.95px; left: 35.70px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.15px; height: 15.43px; left: 52.90px; top: 6.54px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.93px; height: 14.95px; left: 68.97px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.51px; height: 14.95px; left: 82.43px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.12px; height: 14.95px; left: 97.57px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.51px; height: 14.95px; left: 103.31px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.71px; height: 15.43px; left: 117.72px; top: 6.54px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.22px; height: 14.95px; left: 138.24px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.93px; height: 14.95px; left: 151.46px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.15px; height: 14.94px; left: 164.92px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 18.74px; height: 14.95px; left: 176.09px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.12px; height: 14.95px; left: 200.74px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.51px; height: 14.95px; left: 206.47px; top: 6.79px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.22px; height: 15.43px; left: 220.88px; top: 6.54px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.80px; height: 3.87px; left: 234.95px; top: 18.03px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 175.84px; height: 16px; left: 320px; top: 280.16px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 14.88px; font-family: Inter; font-weight: 500; line-height: 16px; word-wrap: break-word">About Morning Brew Inc.</div>
-      <div style="width: 122.84px; height: 16px; left: 320px; top: 312.16px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 14.62px; font-family: Inter; font-weight: 500; line-height: 16px; word-wrap: break-word">Advertise with us</div>
-      <div style="width: 37.23px; height: 16px; left: 320px; top: 344.16px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 15px; font-family: Inter; font-weight: 500; line-height: 16px; word-wrap: break-word">Shop</div>
-      <div style="width: 56.18px; height: 16px; left: 320px; top: 376.16px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 14.88px; font-family: Inter; font-weight: 500; line-height: 16px; word-wrap: break-word">Careers</div>
-      <div style="width: 30.39px; height: 16px; left: 320px; top: 408.16px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 15.62px; font-family: Inter; font-weight: 500; line-height: 16px; word-wrap: break-word">FAQ</div>
-      <div style="width: 1px; height: 226px; left: 579px; top: 236.66px; position: absolute; border-left: 1px var(--color-azure-47, #6B7885) solid"></div>
-      <div style="width: 207.63px; height: 30px; left: 701.23px; top: 236.66px; position: absolute">
-        <div style="width: 29.78px; height: 29.11px; left: 0.25px; top: 0.44px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 16.16px; height: 15.78px; left: 37.92px; top: 7.11px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 14.92px; height: 16.30px; left: 56.08px; top: 6.84px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 12.59px; height: 15.78px; left: 73.03px; top: 7.10px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 13.21px; height: 15.78px; left: 87.24px; top: 7.11px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 3.29px; height: 15.78px; left: 103.22px; top: 7.11px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 13.21px; height: 15.78px; left: 109.28px; top: 7.11px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 14.46px; height: 16.30px; left: 124.49px; top: 6.84px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 11.84px; height: 15.78px; left: 146.13px; top: 7.10px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 12.59px; height: 15.78px; left: 160.08px; top: 7.10px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 10.71px; height: 15.78px; left: 174.29px; top: 7.11px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 19.79px; height: 15.78px; left: 186.07px; top: 7.11px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-      </div>
-      <div style="width: 86.36px; height: 30px; left: 948.86px; top: 236.66px; position: absolute">
-        <div style="width: 86.20px; height: 29.09px; left: 0.16px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 2.88px; height: 5.97px; left: 5.64px; top: 11.62px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.98px; height: 2.33px; left: 9.78px; top: 7.74px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 28.73px; height: 29.09px; left: 0.16px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 8.35px; height: 8.35px; left: 34.38px; top: 0.63px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 8.70px; height: 8.58px; left: 43.38px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.56px; height: 8.35px; left: 52.74px; top: 0.63px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.68px; height: 8.35px; left: 59.77px; top: 0.63px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 2.15px; height: 8.35px; left: 67.40px; top: 0.63px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.68px; height: 8.35px; left: 70.50px; top: 0.63px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 8.46px; height: 8.58px; left: 77.90px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.20px; height: 8.23px; left: 34.38px; top: 11px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.56px; height: 8.23px; left: 41.17px; top: 11px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.37px; height: 8.23px; left: 48.09px; top: 11px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.68px; height: 8.23px; left: 53.57px; top: 11px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 7.27px; height: 8.23px; left: 34.38px; top: 21.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 7.99px; height: 8.23px; left: 41.41px; top: 21.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 2.15px; height: 8.23px; left: 49.64px; top: 21.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.89px; height: 8.23px; left: 52.86px; top: 21.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 7.63px; height: 8.23px; left: 56.55px; top: 21.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 149.08px; height: 30px; left: 1075.22px; top: 236.66px; position: absolute">
-        <div style="width: 148.57px; height: 29.09px; left: 0px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.95px; height: 21.85px; left: 53.13px; top: 7.63px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 9.73px; height: 15.19px; left: 43.95px; top: 7.14px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.86px; height: 14.79px; left: 31.13px; top: 7.06px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.04px; height: 15.19px; left: 19.63px; top: 7.14px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 20.14px; height: 21.62px; left: 0px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 8.53px; height: 17.06px; left: 86.60px; top: 5.38px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.23px; height: 13.80px; left: 82.48px; top: 8.64px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.75px; height: 15.71px; left: 78.17px; top: 6.73px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.79px; height: 11.55px; left: 67.87px; top: 10.90px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 9.73px; height: 15.19px; left: 138.75px; top: 7.14px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.75px; height: 20.60px; left: 132.56px; top: 1.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 7.28px; height: 17.50px; left: 125.30px; top: 4.64px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.13px; height: 15.08px; left: 115.68px; top: 6.90px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.82px; height: 21.34px; left: 99.48px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 206.36px; height: 30px; left: 665.50px; top: 306.66px; position: absolute">
-        <div style="width: 205.45px; height: 29.09px; left: 0.05px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.73px; height: 15.63px; left: 38.98px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.47px; height: 15.62px; left: 52.79px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.61px; height: 15.63px; left: 66.86px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 19.59px; height: 15.62px; left: 78.54px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 16.01px; height: 15.62px; left: 104.31px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.19px; height: 15.62px; left: 121.95px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.47px; height: 15.62px; left: 138.76px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.31px; height: 15.63px; left: 152.83px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.61px; height: 15.63px; left: 167.67px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.33px; height: 15.63px; left: 179.70px; top: 7.24px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.29px; height: 16.13px; left: 193.21px; top: 6.99px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 30.10px; height: 29.10px; left: 0.05px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 131.81px; height: 30px; left: 911.86px; top: 306.66px; position: absolute">
-        <div style="width: 131.28px; height: 29.09px; left: 0.05px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 32.86px; height: 23.69px; left: 98.48px; top: 2.38px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.92px; height: 7.78px; left: 19.73px; top: 0.65px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.99px; height: 7.92px; left: 26.48px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.22px; height: 5.56px; left: 32.41px; top: 3.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.30px; height: 17.30px; left: 0.05px; top: 6.93px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 2.30px; height: 17.59px; left: 14.05px; top: 6.59px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.24px; height: 12.31px; left: 18.47px; top: 12.14px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.54px; height: 17.19px; left: 29.46px; top: 12.42px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.89px; height: 17.86px; left: 42.17px; top: 6.50px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.16px; height: 12.28px; left: 55.18px; top: 12.05px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.16px; height: 12.28px; left: 68.47px; top: 12px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.28px; height: 17.59px; left: 82.53px; top: 6.39px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 60.91px; height: 30px; left: 1083.67px; top: 306.66px; position: absolute">
-        <div style="width: 60.19px; height: 29.09px; left: 0.43px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 60.19px; height: 29.09px; left: 0.43px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.58px; height: 6.07px; left: 5.82px; top: 6.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.11px; height: 6.07px; left: 11.13px; top: 6.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.61px; height: 6.07px; left: 16.17px; top: 6.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.02px; height: 6.07px; left: 23.98px; top: 6.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.37px; height: 6.07px; left: 30.61px; top: 6.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.14px; height: 6.07px; left: 5.82px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.65px; height: 6.07px; left: 10.58px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.69px; height: 6.24px; left: 16.54px; top: 14.14px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.86px; height: 6.07px; left: 21.56px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.11px; height: 6.07px; left: 28.90px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 6.02px; height: 6.07px; left: 33.94px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 5.65px; height: 6.07px; left: 40.67px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 1.12px; height: 6.07px; left: 47.03px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 4.14px; height: 6.07px; left: 49.17px; top: 14.22px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 1.29px; height: 1.29px; left: 54.30px; top: 19.09px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 1.29px; height: 1.29px; left: 54.30px; top: 15.86px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 75.45px; height: 30px; left: 1184.58px; top: 306.66px; position: absolute">
-        <div style="width: 75.45px; height: 29.30px; left: 0px; top: 0.35px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 21.76px; height: 27.99px; left: 53.65px; top: 1.65px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 12.04px; height: 18.83px; left: 44.46px; top: 1.79px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 22.08px; height: 22.46px; left: 23.76px; top: 3.15px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-        <div style="width: 23.65px; height: 27.05px; left: 0px; top: 0.35px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-      </div>
-      <div style="width: 162.72px; height: 30px; left: 602.83px; top: 376.66px; position: absolute">
-        <div style="width: 161.65px; height: 29.09px; left: 0.62px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 18.45px; height: 2.11px; left: 143.79px; top: 27.01px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.33px; height: 23.22px; left: 0.62px; top: 6.33px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.23px; height: 16.99px; left: 18.09px; top: 6.33px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.23px; height: 16.99px; left: 35.53px; top: 6.33px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.10px; height: 22.81px; left: 53px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 22.30px; height: 16.26px; left: 78.17px; top: 6.70px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.23px; height: 16.99px; left: 101.76px; top: 6.33px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 8.84px; height: 16.63px; left: 120.19px; top: 6.33px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.47px; height: 22.44px; left: 130.68px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 169px; height: 24px; left: 805.55px; top: 376.66px; position: absolute">
-        <div style="width: 167.97px; height: 23px; left: 0.50px; top: 0.56px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 29.32px; height: 22.55px; left: 0.50px; top: 0.56px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.49px; height: 17.27px; left: 32.99px; top: 6.29px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.46px; height: 16.36px; left: 49.03px; top: 6.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.93px; height: 4.09px; left: 66.04px; top: 0.56px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.83px; height: 16.36px; left: 66.11px; top: 6.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.30px; height: 16.81px; left: 73.22px; top: 6.30px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.47px; height: 17.26px; left: 90.01px; top: 6.30px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 22.64px; height: 16.82px; left: 107.15px; top: 6.30px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.83px; height: 16.36px; left: 132.88px; top: 6.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.93px; height: 4.09px; left: 132.82px; top: 0.56px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 14.07px; height: 17.26px; left: 139.39px; top: 6.30px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.37px; height: 17.26px; left: 155.11px; top: 6.29px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 98.17px; height: 30px; left: 1014.55px; top: 376.66px; position: absolute">
-        <div style="width: 97.22px; height: 29.09px; left: 0.46px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.98px; height: 13.90px; left: 0.46px; top: 0.52px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 9.44px; height: 13.90px; left: 15.28px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 11.36px; height: 13.90px; left: 26.20px; top: 0.54px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 9.51px; height: 13.90px; left: 38.87px; top: 0.52px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.91px; height: 13.90px; left: 50.63px; top: 0.52px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 9.51px; height: 13.88px; left: 0.46px; top: 15.39px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.97px; height: 13.90px; left: 10.74px; top: 15.38px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.91px; height: 13.90px; left: 26.20px; top: 15.37px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.45px; height: 13.90px; left: 38.86px; top: 15.38px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 3.39px; height: 13.90px; left: 53.18px; top: 15.38px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 12.43px; height: 13.90px; left: 58.45px; top: 15.38px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 13.73px; height: 14.37px; left: 72.31px; top: 15.14px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.47px; height: 14.37px; left: 87.17px; top: 15.13px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 15.10px; height: 13.91px; left: 63.45px; top: 0.81px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 170px; height: 30px; left: 1152.72px; top: 376.66px; position: absolute">
-        <div style="width: 169px; height: 29.09px; left: 0.41px; top: 0.51px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 18.49px; height: 19.35px; left: 0.57px; top: 6.52px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 16.29px; height: 18.47px; left: 22.32px; top: 7.13px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.51px; height: 18.52px; left: 43.16px; top: 6.70px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.43px; height: 24.65px; left: 54.61px; top: 0.53px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 16.29px; height: 18.47px; left: 67.64px; top: 7.13px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.15px; height: 23.20px; left: 86.64px; top: 2.25px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 16.29px; height: 18.47px; left: 99.70px; top: 7.13px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 10.53px; height: 18.52px; left: 120.54px; top: 6.70px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 17.13px; height: 19.15px; left: 132.44px; top: 6.62px; position: absolute; background: var(--color-black-solid, black)"></div>
-        <div style="width: 18.90px; height: 1.67px; left: 150.52px; top: 27.77px; position: absolute; background: var(--color-black-solid, black)"></div>
-      </div>
-      <div style="width: 338.48px; height: 16px; left: 793.63px; top: 446.66px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-azure-37, #545E69); font-size: 11.25px; font-family: Inter; font-weight: 500; text-transform: uppercase; line-height: 16px; letter-spacing: 0.60px; word-wrap: break-word">Business, Work, and Money by Morning brew Inc.</div>
-      <div style="width: 1px; height: 226px; left: 1345.55px; top: 236.66px; position: absolute; border-left: 1px var(--color-azure-47, #6B7885) solid"></div>
-      <div style="width: 187.43px; height: 39px; left: 1366.55px; top: 235.75px; position: absolute; justify-content: center; display: flex; flex-direction: column"><span style="color: var(--color-grey-13, #231F20); font-size: 12px; font-family: Azeret Mono; font-weight: 400; line-height: 19.20px; word-wrap: break-word">© 2025 </span><span style="color: var(--color-grey-13, #231F20); font-size: 12px; font-family: Azeret Mono; font-weight: 400; text-decoration: underline; line-height: 19.20px; word-wrap: break-word">Morning Brew Inc.<br/></span><span style="color: var(--color-grey-13, #231F20); font-size: 12px; font-family: Azeret Mono; font-weight: 400; line-height: 19.20px; word-wrap: break-word">All Rights Reserved.</span></div>
-      <div style="width: 39.78px; height: 12px; left: 1366.55px; top: 300.53px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 11.25px; font-family: Inter; font-weight: 500; line-height: 12px; word-wrap: break-word">Privacy</div>
-      <div style="width: 89.17px; height: 12px; left: 1366.55px; top: 324.53px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 10.88px; font-family: Inter; font-weight: 500; line-height: 12px; word-wrap: break-word">Terms of Service</div>
-      <div style="width: 233.65px; height: 12px; left: 1366.55px; top: 348.53px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 11.06px; font-family: Inter; font-weight: 500; line-height: 12px; word-wrap: break-word">Do Not Sell / Share My Personal Information</div>
-      <div style="width: 104.75px; height: 12px; left: 1366.55px; top: 372.53px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: var(--color-grey-13, #231F20); font-size: 11.06px; font-family: Inter; font-weight: 500; line-height: 12px; word-wrap: break-word">Cookie Preferences</div>
-    </div>
-    <div style="width: 1920px; height: 70px; padding-bottom: 1px; padding-left: 320px; padding-right: 320px; left: 0px; top: 0px; position: absolute; background: var(--color-grey-99, #FCFCFF); border-bottom: 1px var(--color-grey-91, #E9E9E9) solid; justify-content: flex-start; align-items: center; gap: 178.50px; display: inline-flex">
-      <div style="max-width: 224px; position: relative; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-        <div style="max-width: 224px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-          <div style="width: 224px; height: 32px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
-            <div style="width: 224px; height: 32px; position: relative"></div>
-          </div>
-        </div>
-        <div style="width: 1920px; height: 1200px; max-width: 1920px; min-width: 1920px; max-height: 1200px; min-height: 1200px; left: 0px; top: 0px; position: absolute; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
-          <div style="width: 224px; height: 32px; padding-top: 0.04px; padding-bottom: 0.04px; overflow: hidden; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
-            <div style="width: 224px; height: 31.92px; position: relative; overflow: hidden">
-              <div style="width: 32.44px; height: 31.69px; left: 0px; top: 0px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 17.60px; height: 17.18px; left: 41.04px; top: 7.25px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 16.25px; height: 17.75px; left: 60.82px; top: 6.97px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 13.71px; height: 17.18px; left: 79.28px; top: 7.25px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 14.39px; height: 17.18px; left: 94.76px; top: 7.25px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 3.58px; height: 17.18px; left: 112.16px; top: 7.25px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 14.39px; height: 17.18px; left: 118.77px; top: 7.25px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 15.75px; height: 17.75px; left: 135.34px; top: 6.97px; position: absolute; background: var(--color-grey-13, #231F20)"></div>
-              <div style="width: 12.90px; height: 17.18px; left: 158.91px; top: 7.25px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 13.71px; height: 17.18px; left: 174.11px; top: 7.25px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 11.67px; height: 17.18px; left: 189.58px; top: 7.25px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-              <div style="width: 21.55px; height: 17.18px; left: 202.42px; top: 7.25px; position: absolute; background: var(--color-azure-53, #1C7FF2)"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="justify-content: center; align-items: center; gap: 24px; display: flex">
-        <div style="height: 50px; padding-top: 9.59px; padding-bottom: 11.41px; justify-content: flex-start; align-items: center; display: flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.45px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">News</div>
-        </div>
-        <div style="width: 72.56px; height: 50px; position: relative">
-          <div style="width: 60.76px; height: 21px; left: 0px; top: 13.66px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 18px; font-family: Inter; font-weight: 500; line-height: 20.70px; word-wrap: break-word">Games </div>
-          <div style="width: 12px; height: 12px; left: 60.56px; top: 20.66px; position: absolute">
-            <div style="width: 10.23px; height: 6.21px; left: 0.88px; top: 2.89px; position: absolute; background: var(--color-black-solid, black)"></div>
-          </div>
-        </div>
-        <div style="justify-content: center; align-items: center; gap: 4px; display: flex">
-          <div style="height: 50px; padding-top: 9.59px; padding-bottom: 11.41px; justify-content: flex-start; align-items: center; display: flex">
-            <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.88px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Podcast</div>
-          </div>
-          <div style="width: 15px; height: 14px; position: relative">
-            <div style="width: 14px; height: 14px; left: 0.93px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-            <div style="width: 10.50px; height: 10.50px; left: 2.68px; top: 1.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-          </div>
-        </div>
-        <div style="justify-content: center; align-items: center; gap: 4px; display: flex">
-          <div style="height: 50px; padding-top: 9.59px; padding-bottom: 11.41px; justify-content: flex-start; align-items: center; display: flex">
-            <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 17.02px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Video</div>
-          </div>
-          <div style="width: 15px; height: 14px; position: relative">
-            <div style="width: 14px; height: 14px; left: 0.93px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-            <div style="width: 10.50px; height: 10.50px; left: 2.68px; top: 1.75px; position: absolute; background: var(--color-black-solid, black)"></div>
-          </div>
-        </div>
-        <div style="height: 50px; padding-top: 9.59px; padding-bottom: 11.41px; justify-content: flex-start; align-items: center; display: flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.73px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Events</div>
-        </div>
-        <div style="height: 50px; padding-top: 9.59px; padding-bottom: 11.41px; justify-content: flex-start; align-items: center; display: flex">
-          <div style="justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.88px; font-family: Inter; font-weight: 500; line-height: 28.80px; word-wrap: break-word">Shop</div>
-        </div>
-        <div style="height: 50px; padding-top: 5.66px; padding-bottom: 5.65px; justify-content: center; align-items: flex-start; display: flex">
-          <div style="flex: 1 1 0; height: 38.69px; position: relative; border-radius: 4px; outline: 1px var(--color-azure-42, #1666C2) solid; outline-offset: -1px">
-            <div style="width: 18px; height: 18px; left: 13px; top: 10.34px; position: absolute">
-              <div style="width: 17.12px; height: 17.12px; left: 0.37px; top: 0.08px; position: absolute; background: var(--color-azure-42, #1666C2)"></div>
-            </div>
-            <div style="width: 87.40px; height: 21px; left: 35px; top: 8px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: var(--color-black-solid, black); font-size: 16.59px; font-family: Inter; font-weight: 500; line-height: 20.70px; word-wrap: break-word">Newsletter</div>
-            <div style="width: 12px; height: 12px; left: 126.21px; top: 14.34px; position: absolute">
-              <div style="width: 10.23px; height: 6.21px; left: 0.88px; top: 2.89px; position: absolute; background: var(--color-black-solid, black)"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="height: 50px; padding-top: 14.16px; padding-bottom: 17.84px; justify-content: flex-start; align-items: flex-start; display: flex">
-        <div style="width: 40px; height: 18px; position: relative">
-          <div style="width: 18px; height: 18px; left: 11px; top: 0px; position: absolute; background: var(--color-black-solid, black)"></div>
-        </div>
-      </div>
-    </div>
+    <header>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+   
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500 Index"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100 Cash CFD"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:TSLA"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:NVDA"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:AMZN"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:MSFT"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:JPM"
+      },
+      {
+        "description": "",
+        "proName": "NASDAQ:NOK"
+      },
+      
+      {
+        "description": "",
+        "proName": "NASDAQ:GOOG"
+      }
+    ],
+    "showSymbolLogo": false,
+    "isTransparent": true,
+    "displayMode": "regular",
+    "colorTheme": "light",
+    "locale": "en"
+  }
+    </script>
   </div>
+  <!-- TradingView Widget END -->
+
+        
+
+        <div class="container">
+            <h1>Vibe Check</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li>
+
+
+
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                          <head>
+                            <meta charset="UTF-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                            <title>VibeCheck Chat</title>
+                            <style>
+                              body {
+                                font-family: Arial, sans-serif;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100vh;
+                                margin: 0;
+                                background-color: #f4f4f9;
+                              }
+                              .chat-container {
+                                width: 400px;
+                                max-width: 100%;
+                                background: white;
+                                padding: 20px;
+                                border-radius: 10px;
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                              }
+                              .chat-box {
+                                height: 300px;
+                                overflow-y: scroll;
+                                margin-bottom: 20px;
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                border-radius: 5px;
+                                background-color: #fafafa;
+                              }
+                              .chat-input {
+                                width: 100%;
+                                padding: 10px;
+                                font-size: 16px;
+                                border: 1px solid #ccc;
+                                border-radius: 5px;
+                                margin-bottom: 10px;
+                              }
+                              .button {
+                                width: 100%;
+                                padding: 10px;
+                                background-color: #007bff;
+                                color: white;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                              }
+                              .button:disabled {
+                                background-color: #d6d6d6;
+                              }
+                              .message {
+                                margin: 10px 0;
+                              }
+                              .user-message {
+                                text-align: right;
+                                color: #333;
+                              }
+                              .bot-message {
+                                text-align: left;
+                                color: #007bff;
+                              }
+                            </style>
+                          </head>
+                          <body>
+                            <div class="chat-container">
+                              <h3>VibeCheck: Stock Analysis Chat</h3>
+                              <div class="chat-box" id="chat-box"></div>
+                              <input
+                                type="text"
+                                id="user-input"
+                                class="chat-input"
+                                placeholder="Enter stock name or ticker..."
+                                oninput="enableSendButton()"
+                              />
+                              <button
+                                id="send-button"
+                                class="button"
+                                onclick="handleSendMessage()"
+                                disabled
+                              >
+                                Send
+                              </button>
+                            </div>
+                        
+                            <script>
+                              const chatBox = document.getElementById("chat-box");
+                              const userInput = document.getElementById("user-input");
+                              const sendButton = document.getElementById("send-button");
+                        
+                              let messages = [];
+                        
+                              function enableSendButton() {
+                                sendButton.disabled = !userInput.value.trim();
+                              }
+                        
+                              const appendMessage = (role, text) => {
+                                const messageDiv = document.createElement("div");
+                                messageDiv.classList.add("message");
+                                messageDiv.classList.add(
+                                  role === "user" ? "user-message" : "bot-message"
+                                );
+                                messageDiv.textContent = text;
+                                chatBox.appendChild(messageDiv);
+                                chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+                              };
+                        
+                              const handleSendMessage = async () => {
+                                const userMessage = userInput.value.trim();
+                                if (!userMessage) return;
+                        
+                                appendMessage("user", userMessage); // Display user's message
+                                userInput.value = ""; // Clear input field
+                                enableSendButton(); // Disable send button after sending
+                        
+                                try {
+                                  const response = await fetch("http://127.0.0.1:5000/chat", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ message: userMessage }),
+                                  });
+                        
+                                  const data = await response.json();
+                                  if (data.message) {
+                                    appendMessage("bot", data.message); // Display bot's response
+                                  }
+                                } catch (error) {
+                                  console.error("Error:", error);
+                                  appendMessage("bot", "Oops! Something went wrong. Please try again.");
+                                }
+                              };
+                            </script>
+                          </body>
+                        </html>
