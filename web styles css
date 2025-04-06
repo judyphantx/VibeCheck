@@ -1,0 +1,115 @@
+/* Reset some basic elements */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.tradingview-widget-container {
+    margin-top: 20px; /* Adjust the top margin as needed */
+    width: 100%;
+}
+/* Apply a basic font and set the background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Container for fixed width and centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 2px solid #1877F2;
+}
+
+header h1 {
+    color: #1877F2;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1877F2;
+    font-weight: bold;
+}
+
+/* Hero section styling */
+#hero {
+    background-color: #f0f2f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    color: #1877F2;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    margin-bottom: 30px;
+}
+
+#subscription-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#subscription-form button {
+    padding: 10px 20px;
+    background-color: #1877F2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#subscription-form button:hover {
+    background-color: #165db6;
+}
+
+/* About section styling */
+#about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about h2 {
+    color: #1877F2;
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-top: 2px solid #1877F2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #333333;
+}
+
