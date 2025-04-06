@@ -1,4 +1,3 @@
 # VibeCheck
 
-WeHack Project at University of Texas at Dallas.
-CBRE and Capital One Challenge.
+AI chatbot analyzing stocks in a fun and casual conversation. Created for the WeHack Hackathont at the University of Texas at Dallas.
