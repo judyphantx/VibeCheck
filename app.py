@@ -9,7 +9,6 @@ CORS(app)  # Allow CORS for all origins
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 model = "gemini-2.0-flash"
-history = {}  # Dictionary to store responses for each stock
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -18,10 +17,6 @@ def chat():
 
     if user_input.lower() == "exit":
         return jsonify({"message": "Exiting the program. Goodbye!"})
-
-    # Check if the stock is already in history
-    if user_input in history:
-        return jsonify({"message": history[user_input]})
 
     contents = [
         types.Content(
@@ -51,9 +46,6 @@ Disclaimer ⚠️ – "This content is for informational and entertainment purpo
         config=generate_content_config,
     ):
         response_text += chunk.text
-
-    # Store the response in history
-    history[user_input] = response_text
 
     print("Bot response:", response_text)  # Debugging log
 
